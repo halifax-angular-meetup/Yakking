@@ -5,8 +5,8 @@
     <p>{{post.content}}</p>
   </div>
   <div class="card-action">
-    <a class="favorite" href="JavaScript:Void(0)" (click)="markAsFavorite()"> {{post.likes}} <i class="fa fa-star fa-2x" aria-hidden="true"> </i></a>
-    <a class="comment" href="JavaScript:Void(0)"><i class="fa fa-comment fa-2x" aria-hidden="true"> </i></a>
-    <a (click)="onDelete(index)" href="JavaScript:Void(0)"><i class="fa fa-trash fa-2x" aria-hidden="true"> </i></a>
+    <div class="action favorite" (click)="markAsFavorite()"> {{post.likes}} <i class="fa fa-star fa-2x" aria-hidden="true"> </i></div>
+    <div class="action comment"><i class="fa fa-comment fa-2x" aria-hidden="true"> </i></div>
+    <div class="action delete" (click)="onDelete(index)"><i class="fa fa-trash fa-2x" aria-hidden="true"> </i></div>
   </div>
 </div>

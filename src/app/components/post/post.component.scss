@@ -2,3 +2,16 @@
   margin: 15px 0;
   font-size: 12px;
 }
+
+.action {
+  display: inline;
+  color: #ffab40;
+  cursor: pointer;
+  margin-right: 24px;
+  transition: color .3s ease;
+  user-select: none;
+  text-transform: uppercase;
+  &:hover {
+    color: #ffd8a6;
+  }
+}
