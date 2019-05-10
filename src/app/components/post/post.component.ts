@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { PostService } from '../services/post.service';
-import { Post } from '../models/post';
+import { Post } from '../../models/post';
 
 @Component({
   selector: 'app-post',
@@ -9,17 +8,16 @@ import { Post } from '../models/post';
 })
 export class PostComponent implements OnInit {
   posts: Post[];
-  @Input() data: Post;
+  @Input() post: Post;
   @Input() index: number;
   @Output() delete = new EventEmitter<number>();
 
-  constructor(private postService: PostService) { }
+  constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
-  loadPosts(post: Post): Post[] {
-    return this.posts = this.postService.getPosts();
+  markAsFavorite() {
+    this.post.likes = this.post.likes + 1;
   }
 
   onDelete(postIndex: number) {

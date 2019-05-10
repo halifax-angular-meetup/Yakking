@@ -1,7 +1,35 @@
-<ul>
-  <li *ngFor="let post of posts; let i = index">
-    <app-post [data]="post" (onDelete)="onDelete(i)" [index]="i"></app-post>
-  </li>
-</ul>
+
+<!-- loading spinner -->
+<div *ngIf="isLoading" class="loading-container">
+  <div class="preloader-wrapper small active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- post -->
+<div *ngIf="!isLoading" class="post-timeline row">
+  <ul>
+    <li *ngFor="let post of posts; let i = index">
+      <app-post [post]="post" (delete)="delete(i)" [index]="i"></app-post>
+    </li>
+  </ul>
+
+  <div class="col" *ngIf="posts.length === 0">
+    <div class="card-panel blue-grey darken-1 center-align">
+      <span class="white-text">No content to display, try creating some posts!</span>
+    </div>
+  </div>
+
+</div>
 
 <router-outlet></router-outlet>

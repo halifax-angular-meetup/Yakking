@@ -1,0 +1,19 @@
+.post-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  transition: all 300ms ease-in;
+  width: 100%;
+  @media screen and (min-width: 800px) {
+    width: 50%;
+  }
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
