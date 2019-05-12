@@ -1,4 +1,6 @@
-export const postData = [
+import { Post } from '../app/models/post';
+
+export const postData: Post[] = [
   {
     title: 'Post 1',
     date: new Date("Wed, 27 July 2019 13:30:00"),

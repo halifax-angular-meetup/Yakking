@@ -7,7 +7,6 @@ import { Post } from '../../models/post';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent implements OnInit {
-  posts: Post[];
   @Input() post: Post;
   @Input() index: number;
   @Output() delete = new EventEmitter<number>();

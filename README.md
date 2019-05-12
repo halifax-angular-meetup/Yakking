@@ -1,5 +1,7 @@
 # AngularWorkshop
 
+[STACKBLITZ LINKS](https://stackblitz.com/github/halifax-angular-meetup/Yakking/tree/post-feed)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
 ## Development server
@@ -25,3 +27,31 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Post Component html
+
+``` html
+<div class="card blue-grey darken-1">
+
+  <div class="card-content white-text">
+    <span class="card-title"></span>
+    <div class="card-date"></div>
+    <p></p>
+  </div>
+
+  <div class="card-action">
+    <div class="action favorite">
+      <i class="fa fa-star fa-2x" aria-hidden="true"> </i>
+    </div>
+
+    <div class="action comment">
+      <i class="fa fa-comment fa-2x" aria-hidden="true"> </i>
+    </div>
+
+    <div class="action delete">
+      <i class="fa fa-trash fa-2x" aria-hidden="true"> </i>
+    </div>
+  </div>
+</div>
+```
