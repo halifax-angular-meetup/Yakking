@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostComponent } from './components/post/post.component';
-import { AppHighlightDirective } from './directives/app-highlight.directive';
+import { PostComponent } from './post/post.component';
+import { AppHighlightDirective } from './app-highlight.directive';
 @NgModule({
   // The set of components, directives, and pipes (declarables) that belong to this module.
   declarations: [

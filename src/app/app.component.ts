@@ -21,8 +21,8 @@ export class AppComponent implements OnInit {
     }, 1000);
   }
 
-  delete(postIndex: number) {
-    this.posts.splice(postIndex, 1);
+  delete(index: number) {
+    this.posts.splice(index, 1);
     console.log(this.posts);
   }
 }

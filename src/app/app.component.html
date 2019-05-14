@@ -20,7 +20,7 @@
 <div *ngIf="!isLoading" class="post-timeline row">
   <ul>
     <li *ngFor="let post of posts; let i = index">
-      <app-post [post]="post" (delete)="delete(i)" [index]="i"></app-post>
+      <app-post [post]="post" (delete)="delete($event)" [index]="i"></app-post>
     </li>
   </ul>
 

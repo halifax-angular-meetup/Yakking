@@ -10,8 +10,9 @@ export class AppHighlightDirective implements OnInit, OnChanges {
   ngOnInit() {}
 
   ngOnChanges(changes: SimpleChanges) {
-    if (this.likes > 30) {
-      this.el.nativeElement.style.border = '4px solid #ffab40';
+    console.log('changes', changes);
+    if (changes.likes.currentValue > 30) {
+      this.el.nativeElement.style.border = '4px solid #FFAB40';
     }
   }
 
